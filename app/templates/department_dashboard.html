@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Department Dashboard</title>
+</head>
+<body>
+
+<h1>Welcome to the Department Dashboard</h1>
+
+<div class="tabs">
+    {% if department == 'data' %}
+        <div id="data-tab">
+            <h2>Data Department</h2>
+            <p>Content specific to Data Department.</p>
+        </div>
+    {% elif department == 'infra' %}
+        <div id="infra-tab">
+            <h2>Infrastructure Department</h2>
+            <p>Content specific to Infrastructure Department.</p>
+        </div>
+    {% elif department == 'digital_marketing' %}
+        <div id="digital-marketing-tab">
+            <h2>Digital Marketing Department</h2>
+            <p>Content specific to Digital Marketing Department.</p>
+        </div>
+    {% else %}
+        <p>You do not have access to this dashboard.</p>
+    {% endif %}
+</div>
+
+</body>
+</html>
